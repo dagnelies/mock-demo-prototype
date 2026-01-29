@@ -44,9 +44,9 @@ export async function GET(context :APIContext) {
 function getUserSelectionFromSub(sub: string): string {
     // Map sub IDs to user selections
     const subToUserMap: Record<string, string> = {
-        "1234567890": "john",
-        "9876543210": "admin",
-        "5555555555": "jane"
+        "123-456-789": "john",
+        "987-654-321": "admin",
+        "555-555-555": "jane"
     };
     console.log(`Mapping sub ${sub} to user selection:`, subToUserMap[sub]);
     return subToUserMap[sub];

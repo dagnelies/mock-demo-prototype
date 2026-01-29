@@ -35,7 +35,7 @@ When performing the authorization code flow, the server will always return the s
 
 ```json
 {
-  "sub": "1234567890",
+  "sub": "123-456-789",
   "name": "John Doe",
   "email": "john.doe@example.org",
   "email_verified": true

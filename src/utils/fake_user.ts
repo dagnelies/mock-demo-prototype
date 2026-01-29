@@ -10,7 +10,7 @@ export interface MockUser {
 
 const PREDEFINED_USERS: Record<string, MockUser> = {
     john: {
-        sub: "1234567890",
+        sub: "123-456-789",
         name: "John Doe",
         given_name: "John",
         family_name: "Doe",
@@ -19,7 +19,7 @@ const PREDEFINED_USERS: Record<string, MockUser> = {
         picture: "https://www.loremfaces.net/48/id/2.jpg",
     },
     jane: {
-        sub: "5555555555",
+        sub: "555-555-555",
         name: "Jane Smith",
         given_name: "Jane",
         family_name: "Smith",
@@ -28,7 +28,7 @@ const PREDEFINED_USERS: Record<string, MockUser> = {
         picture: "https://www.loremfaces.net/48/id/1.jpg",
     },
     admin: {
-        sub: "9876543210",
+        sub: "987-654-321",
         name: "Admin User",
         given_name: "Admin",
         family_name: "User",
