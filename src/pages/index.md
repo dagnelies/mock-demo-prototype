@@ -27,7 +27,6 @@ Authorization Request
 <a class="btn" id="auth_url">Try it out</a>
 
 
-
 The mock user
 -------------
 
@@ -49,5 +48,8 @@ Sources & Docs
 [https://github.com/passwordless-id/mock](https://github.com/passwordless-id/mock)
 
 <script>
-  document.getElementById("auth_url").href = "/authorize?response_type=code&client_id=MyClient&redirect_uri=" + encodeURIComponent(window.location.origin) + "%2Fcallback&scope=openid%20email%20profile&state=xyz";
+  // Dynamically computes the URL
+  const callbackUrl = encodeURIComponent(window.location.origin + "/callback");
+  const authUrl = `/authorize?response_type=code&client_id=MyClient&redirect_uri=${callbackUrl}&scope=openid%20email%20profile&state=xyz`;
+  document.getElementById("auth_url").href = authUrl;
 </script>
